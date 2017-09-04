@@ -1,10 +1,10 @@
-var claytonVoice = new Audio("./sounds/sample-track.m4a");
+var claytonVoice = new Audio("sample-track.m4a");
 var isClaytonPlaying = false;
 
-var rainSound = new Audio("./sounds/rain_1.mp3");
+var rainSound = new Audio("rain_1.mp3");
 var isRainPlaying = false;
 
-var freightTrain = new Audio("./sounds/freight-train.m4a")
+var freightTrain = new Audio("freight-train.m4a")
 var isFreightTrainPlaying = false;
 
 function claytonControl() {
