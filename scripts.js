@@ -7,6 +7,9 @@ var isDogBarking = false;
 var rainSound = new Audio("rain_1.mp3");
 var isRainPlaying = false;
 
+var noSong = new Audio("no-song.m4a");
+var isNoSongPlaying = false;
+
 var freightTrain = new Audio("freight-train.m4a")
 var isFreightTrainPlaying = false;
 
@@ -27,6 +30,25 @@ console.log(isClaytonPlaying + " At The Start");
   }
 console.log(isClaytonPlaying + " At The End");
 }
+
+
+
+function noControl() {
+console.log(isNoSongPlaying + " At The Start");
+  if (isNoSongPlaying == true) {
+      noSong.pause();
+      noSong.currentTime = 0;
+      console.log(isNoSongPlaying + " Inside Pause Statement");
+      return isNoSongPlaying = false;
+  } else if (isNoSongPlaying == false) {
+          noSong.play();
+          console.log(isNoSongPlaying + " Inside Play Statement")
+          return isNoSongPlaying = true;
+  }
+console.log(isNoSongPlaying + " At The End");
+}
+
+
 
 function kathyControl() {
 console.log(isKathySongPlaying + " At The Start");
