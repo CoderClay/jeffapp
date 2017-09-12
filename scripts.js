@@ -11,6 +11,7 @@ function claytonControl() {
 console.log(isClaytonPlaying + " At The Start");
   if (isClaytonPlaying == true) {
       claytonVoice.pause();
+      claytonVoice.currentTime = 0;
       console.log(isClaytonPlaying + " Inside Pause Statement");
       return isClaytonPlaying = false;
   } else if (isClaytonPlaying == false) {
@@ -41,6 +42,7 @@ function freightTrainControl() {
 console.log(isFreightTrainPlaying + " At The Start");
   if (isFreightTrainPlaying == true) {
       freightTrain.pause();
+      freightTrain.currentTime = 0;
       console.log(isFreightTrainPlaying + " Inside Pause Statement");
       return isFreightTrainPlaying = false;
   } else if (isFreightTrainPlaying == false) {

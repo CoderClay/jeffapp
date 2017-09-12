@@ -1,74 +1,60 @@
-/*Navbar Background Color*/
-.navbar-custom {
-  background-color: #337F99;
-  border-color: #337F99;
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  position: relative;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
 }
-
-/*Inactive Link Color*/
-.navbar-custom .navbar-nav > li > a {
-    color: #C9C7C6;
-}
-
-/*Active Link Color*/
-.navbar-custom .navbar-nav > .active > a {
-    color: #337F99;
-    background-color: #C9C7C6;
-}
-
-
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus,
-.navbar-custom .navbar-nav > .open >a {
-    text-decoration: none;
-    background-color: #BBCAFF;
-}
-
-/*Brand Lettering Color*/
-.navbar-custom .navbar-brand {
-    color: white;
-}
-
-
-.navbar-custom .navbar-toggle {
-    background-color:#eeeeee;
-}
-.navbar-custom .icon-bar {
-    background-color:#BBCAFF;
-}
-
-
-
-
-
 
 
 #oneDiv {
-  height: 50vh;
+  height: 100%;
   background-color: red;
 }
 #twoDiv {
-  height: 50vh;
+  height: 100%;
   background-color: purple;
 }
 #threeDiv {
-  height: 50vh;
+  height: 100%;
   background-color: pink;
 }
 
 #fourDiv {
-  height: 50vh;
+  height: 100%;
   background-color: blue;
 }
 #clayton-image {
+  height: 280px;
   width: 100%;
+  display: block;
 }
 
 #guitar-image {
+  height: 280px;
   width: 100%;
+  display: block;
 }
 
 #rain-image {
+  height: 280px;
   width: 100%;
+  display: block;
+}
+
+#kathy-image {
+  height: 280px;
+  width: 100%;
+  display: block;
 }
