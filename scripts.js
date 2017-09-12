@@ -1,4 +1,4 @@
-var claytonVoice = new Audio("sample-track.m4a");
+var claytonVoice = new Audio("clayton-greeting.m4a");
 var isClaytonPlaying = false;
 
 var rainSound = new Audio("rain_1.mp3");
