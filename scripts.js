@@ -7,6 +7,9 @@ var isRainPlaying = false;
 var freightTrain = new Audio("freight-train.m4a")
 var isFreightTrainPlaying = false;
 
+var kathySong = new Audio("be-a-gentleman.m4a")
+var isKathySongPlaying = false;
+
 function claytonControl() {
 console.log(isClaytonPlaying + " At The Start");
   if (isClaytonPlaying == true) {
@@ -22,6 +25,20 @@ console.log(isClaytonPlaying + " At The Start");
 console.log(isClaytonPlaying + " At The End");
 }
 
+function kathyControl() {
+console.log(isKathySongPlaying + " At The Start");
+  if (isKathySongPlaying == true) {
+      kathySong.pause();
+      kathySong.currentTime = 0;
+      console.log(isKathySongPlaying + " Inside Pause Statement");
+      return isKathySongPlaying = false;
+  } else if (isKathySongPlaying == false) {
+          kathySong.play();
+          console.log(isKathySongPlaying + " Inside Play Statement")
+          return isKathySongPlaying = true;
+  }
+console.log(isKathySongPlaying + " At The End");
+}
 
 
 function rainControl() {
