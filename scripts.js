@@ -1,6 +1,9 @@
 var claytonVoice = new Audio("clayton-greeting.m4a");
 var isClaytonPlaying = false;
 
+var dogBark = new Audio("barking-dog.m4a");
+var isDogBarking = false;
+
 var rainSound = new Audio("rain_1.mp3");
 var isRainPlaying = false;
 
@@ -40,6 +43,22 @@ console.log(isKathySongPlaying + " At The Start");
 console.log(isKathySongPlaying + " At The End");
 }
 
+
+
+function dogControl() {
+console.log(isDogBarking + " At The Start");
+  if (isDogBarking == true) {
+      dogBark.pause();
+      dogBark.currentTime = 0;
+      console.log(isDogBarking + " Inside Pause Statement");
+      return isDogBarking = false;
+  } else if (isDogBarking == false) {
+          dogBark.play();
+          console.log(isDogBarking + " Inside Play Statement")
+          return isDogBarking = true;
+  }
+console.log(isDogBarking + " At The End");
+}
 
 function rainControl() {
 console.log(isRainPlaying + " At The Start");
