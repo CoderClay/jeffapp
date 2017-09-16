@@ -1,8 +1,11 @@
 var claytonVoice = new Audio("clayton-greeting.m4a");
 var isClaytonPlaying = false;
 
-var dogBark = new Audio("barking-dog.m4a");
-var isDogBarking = false;
+// var dogBark = new Video("brad-guitar.mp4");
+// var isDogBarking = false;
+
+
+
 
 var rainSound = new Audio("rain_1.mp3");
 var isRainPlaying = false;
@@ -15,6 +18,10 @@ var isFreightTrainPlaying = false;
 
 var kathySong = new Audio("be-a-gentleman.m4a")
 var isKathySongPlaying = false;
+
+var vid = document.getElementById('bradVideo')
+var vid2 = document.getElementById('bradMessage');
+
 
 function claytonControl() {
 console.log(isClaytonPlaying + " At The Start");
@@ -31,6 +38,13 @@ console.log(isClaytonPlaying + " At The Start");
 console.log(isClaytonPlaying + " At The End");
 }
 
+function bradMessage() {
+  vid2.play();
+}
+
+function bradPlay() {
+  vid.play();
+}
 
 
 function noControl() {
